@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Outfit:wght@300;400;500;600;700&family=Noto+Serif+SC:wght@300;400;500;600&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Outfit", "Inter", system-ui, -apple-system, sans-serif;
+  --font-serif: "Noto Serif SC", "Georgia", serif;
+  
+  /* Natural Tones Palette */
+  --color-natural-bg: #F7F3EE;
+  --color-natural-dark: #5C564E;
+  --color-natural-sand: #EDE8E0;
+  --color-natural-sand-text: #8D8478;
+
+  /* Breathing Sage */
+  --color-sage-bg: #E6EBE6;
+  --color-sage-border: #D8DFD8;
+  --color-sage-dark: #566D64;
+  --color-sage-text: #738880;
+  --color-sage-balloon: #B7C9C0;
+  --color-sage-inner: #9BB7AF;
+
+  /* Shredder Slate */
+  --color-slate-bg: #EAEBED;
+  --color-slate-border: #DDE0E5;
+  --color-slate-dark: #565C6D;
+  --color-slate-text: #828899;
+
+  /* White Noise Clay */
+  --color-clay-bg: #F1E9E4;
+  --color-clay-border: #E9DFD8;
+  --color-clay-dark: #7D6D5F;
+  --color-clay-text: #9B8C7D;
+  --color-clay-track: #C9BEB5;
+}
+
+body {
+  background-color: var(--color-natural-bg);
+  color: var(--color-natural-dark);
+  font-family: var(--font-sans);
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Custom scrollbar for beautiful lists */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--color-natural-sand-text);
+  opacity: 0.3;
+  border-radius: 9999px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color-natural-dark);
+}
+
+/* Paper crinkle and shred animation effects */
+@keyframes shred-slide {
+  0% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(180px);
+    opacity: 0;
+  }
+}
+
+.shred-effect {
+  animation: shred-slide 1.8s ease-in-out forwards;
+}
+

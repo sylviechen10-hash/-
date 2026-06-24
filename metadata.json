@@ -1,0 +1,6 @@
+{
+  "name": "心晴高考",
+  "description": "专为高考阶段学生打造的轻量级、无负担的心理舒压与情绪缓释工具。包含呼气气球、焦虑粉碎机和白噪音自习室三大模块。",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
